@@ -1,6 +1,6 @@
 import axios, { AxiosResponse } from 'axios';
 
-import { Article, HttpRequestOptions } from '../../interfaces';
+import { Article } from '../../interfaces';
 
 
 const ROOT_API_URL = process.env.REACT_APP_API_URL;
