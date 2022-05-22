@@ -15,7 +15,7 @@ export interface Article {
     body?: string;
     comments?: Comment[];
     createdAt: number;
-    editedAt: number;
+    editedAt?: number;
     frontImage: ImageAttributes;
     imageGallery?: {
         id: string,
@@ -23,6 +23,7 @@ export interface Article {
     }[];
     id: string;
     isFeatured?: boolean;
+    permalink: string;
     title: string;
     topics: Topic[];
 }
