@@ -13,6 +13,7 @@ jest.mock('axios');
 // Create an object of mocked Axios' type
 const mockedAxios = axios as jest.Mocked<typeof axios>;
 
+
 describe('Articles API', () => {
     beforeAll(() => jest.spyOn(axios, 'get')
         .mockImplementation());
@@ -78,7 +79,7 @@ describe('Articles API', () => {
             expect(axios.get).toHaveBeenCalledWith(url);
             expect(data).toEqual(articles);
         });
-    })
+    });
 
     describe('fetchArticlesByPermalink()', () => {
         it('should find and return an article by its permalink if it exists', async () => {
