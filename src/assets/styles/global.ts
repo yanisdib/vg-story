@@ -29,7 +29,7 @@ export default createGlobalStyle<{ theme: DefaultTheme }>`
         --ui-content-color: #000; 
 
         /** BREAKPOINTS */
-        --ui-media-breakpoints-xs: 348px;
+        --ui-media-breakpoints-xs: 375px;
         --ui-media-breakpoints-sm: 744px;
         --ui-media-breakpoints-md: 950px;
         --ui-media-breakpoints-lg: 1128px;
