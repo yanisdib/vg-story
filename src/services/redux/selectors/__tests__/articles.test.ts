@@ -18,11 +18,12 @@ import {
 jest.mock('../../hooks');
 
 // Create an object of mocked useAppSelector hook's type
-const mockedUseAppSelector = useAppSelector as jest.Mock;
 
 
 describe('Articles selectors', () => {
-    const mockedState: RootState = {
+
+    const mockedUseAppSelector = useAppSelector as jest.Mock;
+    const fixtureState: RootState = {
         articles: {
             body: [
                 {
@@ -72,30 +73,34 @@ describe('Articles selectors', () => {
                 selector: (
                     state: RootState
                 ) => StoreState<Article | Article[]>
-            ) => selector(mockedState))
+            ) => selector(fixtureState))
     ));
 
     afterEach(() => jest.resetAllMocks());
 
-
     describe('selectArticles', () => {
+
         it('should return articles state', () => {
+
             const articles: StoreState<Article[]> = mockedUseAppSelector(selectArticles);
 
-            expect(articles).toEqual(mockedState.articles);
+            expect(articles).toEqual(fixtureState.articles);
         });
     });
 
     describe('selectFeaturedArticles', () => {
+
         it('should return a list of featured articles', () => {
+
             const articles: StoreState<Article[]> = mockedUseAppSelector(selectArticles);
             const featuredArticles = selectFeaturedArticles(articles);
 
-            expect(featuredArticles).toEqual([mockedState.articles.body[0]]);
+            expect(featuredArticles).toEqual([fixtureState.articles.body[0]]);
         });
     });
 
     describe('selectArticleByPermalink', () => {
+
         let articles: StoreState<Article[]>;
 
         beforeEach(() => (
@@ -103,16 +108,18 @@ describe('Articles selectors', () => {
         ));
 
         it('should retrieve and return an article by its permalink', () => {
+
             const permalink: string = 'this-is-a-test';
             const selectedArticle: Article | string = selectArticleByPermalink(
                 articles,
                 permalink
             );
 
-            expect(selectedArticle).toEqual(mockedState.articles.body[0]);
+            expect(selectedArticle).toEqual(fixtureState.articles.body[0]);
         });
 
         it('should return message if article does not exist', () => {
+
             const permalink: string = 'abracadabra-is-not-working';
             const selectedArticle: Article | string = selectArticleByPermalink(
                 articles,
