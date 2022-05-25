@@ -2,8 +2,21 @@
 
 exports[`Home component renders without crashing 1`] = `
 <div>
-  <div>
-    Homepage
+  <div
+    class="sc-jSMfEi cdnhni"
+    data-testid="loading-screen"
+  >
+    <div
+      class="sc-gKXOVf gujzKN"
+    >
+      <div
+        class="sc-iBkjds jtfPjD"
+      >
+        <div
+          class="sc-eCYdqJ iSiowD"
+        />
+      </div>
+    </div>
   </div>
 </div>
 `;
