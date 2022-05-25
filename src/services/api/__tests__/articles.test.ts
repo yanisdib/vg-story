@@ -15,8 +15,10 @@ const mockedAxios = axios as jest.Mocked<typeof axios>;
 
 
 describe('Articles API', () => {
-    beforeAll(() => jest.spyOn(axios, 'get')
-        .mockImplementation());
+    beforeAll(() => jest
+        .spyOn(axios, 'get')
+        .mockImplementation()
+    );
 
     afterAll(() => jest.restoreAllMocks());
 
