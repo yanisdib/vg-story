@@ -14,13 +14,15 @@ interface StyledSectionProps {
 
 
 const Section = styled.section<StyledSectionProps>`
+    background-color: ${({
+        background
+    }: StyledSectionProps) => background};
+    
     @media (min-width: 375px) {
         display: flex;
         flex-direction: row;
         height: 100vh;
-        background-color: ${({
-            background
-        }: StyledSectionProps) => background};
+
     }
 
     @media (min-width: 950px) {
@@ -111,7 +113,10 @@ function Hero({ article }: HeroProps) {
     } = article;
 
     return (
-        <Section background={backgroundHex}>
+        <Section
+            data-testid="hero-section"
+            background={backgroundHex}
+        >
             <Wrapper>
                 <Content>
                     <Preview>
