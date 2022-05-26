@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, useLocation } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { Provider as StoreProvider } from 'react-redux';
 
@@ -10,6 +10,23 @@ import GlobalTheme from './assets/styles/global';
 import { defaultTheme } from './assets/styles/theme';
 
 import App from './App';
+
+
+interface AppWrapperProps {
+  children: JSX.Element;
+}
+
+
+const AppWrapper = ({ children }: AppWrapperProps) => {
+
+  const location = useLocation();
+
+  useLayoutEffect(() => {
+    document.documentElement.scrollTo(0, 0);
+  }, [location.pathname]);
+
+  return children;
+}
 
 
 const root: ReactDOM.Root = ReactDOM.createRoot(
@@ -22,7 +39,9 @@ root.render(
       <GlobalTheme />
       <StoreProvider store={store}>
         <BrowserRouter>
-          <App />
+          <AppWrapper>
+            <App />
+          </AppWrapper>
         </BrowserRouter>
       </StoreProvider>
     </ThemeProvider>
