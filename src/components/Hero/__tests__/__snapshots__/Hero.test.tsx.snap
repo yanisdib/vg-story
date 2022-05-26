@@ -3,7 +3,8 @@
 exports[`Hero component should render without crashing 1`] = `
 <div>
   <section
-    class="sc-bczRLJ gQOoFn"
+    class="sc-bczRLJ fSgVHf"
+    data-testid="hero-section"
   >
     <div
       class="sc-gsnTZi dqCHuM"
