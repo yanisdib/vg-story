@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { Article } from '../../interfaces';
+import { Article as IArticle } from '../../interfaces';
 
 import Container from '../Container/Container';
 import {
@@ -15,11 +15,11 @@ import {
 
 
 interface ArticleProps {
-    currentArticle: Article;
+    currentArticle: IArticle;
 }
 
 
-function Article({ currentArticle }: ArticleProps) {
+function Article({ currentArticle }: ArticleProps): JSX.Element {
 
     const {
         author,
@@ -31,7 +31,7 @@ function Article({ currentArticle }: ArticleProps) {
         imageGallery,
         title,
         topics
-    }: Article = currentArticle;
+    }: IArticle = currentArticle;
 
     return (
         <View background={backgroundHex}>
