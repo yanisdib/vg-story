@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero component should render without crashing 1`] = `
+<div>
+  <section
+    class="sc-bczRLJ gQOoFn"
+  >
+    <div
+      class="sc-gsnTZi dqCHuM"
+    >
+      <div
+        class="sc-dkzDqf kdZSXg"
+      >
+        <div
+          class="sc-hKMtZM fVTBvs"
+        >
+          <h4>
+            Test
+          </h4>
+          <h1>
+            <a
+              href="/article/this-is-a-test"
+            >
+              This is a test
+            </a>
+          </h1>
+          <h4>
+            <span>
+              <a
+                href="/article/this-is-a-test"
+              >
+                Read -&gt;
+              </a>
+            </span>
+          </h4>
+        </div>
+        <div
+          class="sc-eCYdqJ eOJYOC"
+        >
+          <a
+            href="/article/this-is-a-test"
+            title="Read"
+          >
+            <img
+              alt="Article's image"
+              src="hello.jpg"
+              title="Article's image"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;
