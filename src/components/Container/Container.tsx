@@ -11,7 +11,7 @@ export default styled.div`
     --container-padding-x: 80px !important;
 
 
-    @media (min-width: var(--ui-media-breakpoints-xs)) {
+    @media (min-width: 375px) {
         display: flex;
         justify-content: center;
         width: 95vw;
@@ -21,7 +21,7 @@ export default styled.div`
         padding-right: 0;
     }
 
-    @media (min-width: var(--ui-media-breakpoints-sm)) {
+    @media (min-width: 744px) {
         display: flex;
         width: 95vw;
         max-width: var(--container-max-width-sm);
@@ -29,19 +29,19 @@ export default styled.div`
         padding-right: 0;
     }
 
-    @media (min-width: var(--ui-media-breakpoints-md)) {
+    @media (min-width: 950px) {
         display: flex;
         width: 84vw;
         max-width: var(--container-max-width-md);
     }
 
-    @media (min-width: var(--ui-media-breakpoints-lg)) {
+    @media (min-width: 1128px) {
         display: flex;
         width: 84vw;
         max-width: var(--container-max-width-lg);
     }
 
-    @media (min-width: var(--ui-media-breakpoints-xl)) {
+    @media (min-width: 1440px) {
         display: flex;
         width: 84vw;
         max-width: var(--container-max-width-xl);
