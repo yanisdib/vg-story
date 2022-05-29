@@ -1,11 +1,12 @@
-import { Hero } from '../../components';
-
 import { Article } from '../../interfaces';
 
 import { useArticles } from '../../hooks/useArticles';
+
 import { selectFeaturedArticles } from '../../services/redux/selectors/articles';
 
 import withStatusHandler from '../../helpers/hoc/withStatusHandler';
+
+import { FeaturedArticlesGrid, Hero } from '../../components';
 
 
 function Home(): JSX.Element {
@@ -18,13 +19,24 @@ function Home(): JSX.Element {
     });
 
     const HeroWithStatusHandler = withStatusHandler<{ article: Article }>(Hero);
+    const FeaturedArticlesGridWithStatusHandler = withStatusHandler<{ featuredArticles: Article[] }>(FeaturedArticlesGrid)
+
 
     return (
-        <HeroWithStatusHandler
-            error={error}
-            status={status}
-            {...{ article: featuredArticles[0] }}
-        />
+        <>
+            <HeroWithStatusHandler
+                error={error}
+                status={status}
+                {...{ article: featuredArticles[0] }}
+            />
+            <FeaturedArticlesGridWithStatusHandler
+                error={error}
+                status={status}
+                {...{
+                    featuredArticles: featuredArticles.slice(1)
+                }}
+            />
+        </>
     );
 }
 
