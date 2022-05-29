@@ -7,30 +7,29 @@ interface StyledViewProps {
 
 
 export const View = styled.div<StyledViewProps>`
-display: flex;
-flex-direction: row;
-min-height: 100vh;
-background: ${(
-    { background = '#000' }: StyledViewProps
-) => `linear-gradient(180deg, ${background} 70vh, #FFF 0%)`};
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    background: ${(
+        { background = '#000' }: StyledViewProps
+    ) => `linear-gradient(180deg, ${background} 70vh, #FFF 0%)`};
 `;
 
 export const Wrapper = styled.div`
-display: flex;
-flex-direction: column;
-width: 100%;
-height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
 `;
 
 export const Content = styled.div`
-display: flex;
-flex-direction: column;
-width: 100%;
-height: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
 `;
 
 export const Details = styled.div`
-
     padding: calc(var(--ui-padding-y) / 2) 0;
     line-height: var(--ui-title-lh-xl);
 
@@ -45,7 +44,6 @@ export const Details = styled.div`
 `;
 
 export const FrontImage = styled.div`
-
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -64,7 +62,6 @@ export const FrontImage = styled.div`
 `;
 
 export const Main = styled.main`
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -72,7 +69,6 @@ export const Main = styled.main`
 `;
 
 export const Information = styled.div`
-
     display: flex;
     flex-direction: column;
     flex: 30%;
@@ -86,7 +82,6 @@ export const Information = styled.div`
 `;
 
 export const Body = styled.div`
-
     display: flex;
     flex-direction: column;
     flex: 70%;
