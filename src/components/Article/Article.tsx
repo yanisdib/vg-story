@@ -1,13 +1,17 @@
+import moment from 'moment';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { Article as IArticle } from '../../interfaces';
 
 import Container from '../Container/Container';
+
 import {
+    Body,
     Content,
     Details,
     FrontImage,
+    Information,
     Main,
     View,
     Wrapper
@@ -65,7 +69,21 @@ function Article({ currentArticle }: ArticleProps): JSX.Element {
                                 title={frontImage?.title ?? title}
                             />
                         </FrontImage>
-                        <Main></Main>
+                        <Main>
+                            <Information>
+                                <span>Published:</span>
+                                <p>{moment(createdAt).format('ll')}</p>
+
+                                <span>Written by:</span>
+                                <p>{author}</p>
+
+                                <span>Artwork by:</span>
+                                <p>Square Enix</p>
+                            </Information>
+                            <Body>
+                                <p>{body}</p>
+                            </Body>
+                        </Main>
                     </Content>
                 </Container>
             </Wrapper>
