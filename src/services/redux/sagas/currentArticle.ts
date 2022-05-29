@@ -34,7 +34,9 @@ export function* fetchCurrentArticleSaga({ payload: permalink }: PayloadAction<s
     }
 }
 
+
 export default function* currentArticleSaga() {
+    
     yield takeLatest(
         fetchCurrentArticleRequest,
         fetchCurrentArticleSaga
