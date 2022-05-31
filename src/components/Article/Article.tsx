@@ -59,7 +59,7 @@ function Article({ currentArticle }: ArticleProps): JSX.Element {
                             </h5>
                             <h2>{title}</h2>
                             <h5>
-                                {`Written by ${author} — ${frontImage.title}`}
+                                {`Written by ${author} — ${frontImage?.title ?? ''}`}
                             </h5>
                         </Details>
                         <FrontImage>
