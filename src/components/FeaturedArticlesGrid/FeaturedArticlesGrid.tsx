@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 import { Article } from '../../interfaces';
 
-import Container from '../Container/Container';
+import { Container } from '../';
 
 import {
     Card,
@@ -42,8 +42,8 @@ function FeaturedArticlesGrid(
                                         topics
                                     } = article;
 
-                                    return (index < 2) ? (
-                                        <Card key={id}>
+                                    return (index < featuredArticles.length - 1) ? (
+                                        <Card key={id} data-testid={`card-test-${index}`}>
                                             <Link to={`article/${permalink}`}>
                                                 <img
                                                     alt={frontImage?.alt ?? title}
@@ -62,7 +62,7 @@ function FeaturedArticlesGrid(
                                             <p>{body}</p>
                                         </Card>
                                     ) : (
-                                        <FullCard key={id}>
+                                        <FullCard key={id} data-testid="fullcard-test">
                                             <Column>
                                                 <h5>
                                                     {topics
