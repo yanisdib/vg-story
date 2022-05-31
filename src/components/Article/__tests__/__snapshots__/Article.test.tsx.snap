@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Article component should render without crashing 1`] = `
+<div>
+  <div
+    class="sc-gsnTZi gqYmWm"
+  >
+    <div
+      class="sc-dkzDqf iXMUXw"
+    >
+      <div
+        class="sc-bczRLJ bJuwle"
+      >
+        <div
+          class="sc-hKMtZM qWfsI"
+        >
+          <div
+            class="sc-eCYdqJ bmXWGA"
+          >
+            <h5>
+              <a
+                href="/browse/test"
+              >
+                Test
+              </a>
+            </h5>
+            <h2>
+              This is a test
+            </h2>
+            <h5>
+              Written by Yanis — 
+            </h5>
+          </div>
+          <div
+            class="sc-jSMfEi bDZnFu"
+          >
+            <img
+              alt="This is a test"
+              src="hello.jpg"
+              title="This is a test"
+            />
+          </div>
+          <main
+            class="sc-gKXOVf fMqBBS"
+          >
+            <div
+              class="sc-iBkjds dWrnOW"
+            >
+              <span>
+                Published:
+              </span>
+              <p>
+                Jan 1, 1970
+              </p>
+              <span>
+                Written by:
+              </span>
+              <p>
+                Yanis
+              </p>
+              <span>
+                Artwork by:
+              </span>
+              <p>
+                Square Enix
+              </p>
+            </div>
+            <div
+              class="sc-ftvSup daMggH"
+            >
+              <p>
+                lorem ipsum
+              </p>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
