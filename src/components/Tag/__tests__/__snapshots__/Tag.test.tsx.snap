@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tag component renders correctly without crashing 1`] = `
+<div>
+  <div
+    class="sc-bczRLJ kaUByI"
+  >
+    Hello
+  </div>
+</div>
+`;

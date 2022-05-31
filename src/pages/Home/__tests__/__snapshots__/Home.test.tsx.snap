@@ -3,33 +3,33 @@
 exports[`Home component renders without crashing 1`] = `
 <div>
   <div
-    class="sc-jSMfEi cdnhni"
+    class="sc-gKXOVf hzNlBD"
     data-testid="loading-screen"
   >
     <div
-      class="sc-gKXOVf gujzKN"
+      class="sc-iBkjds kvvntL"
     >
       <div
-        class="sc-iBkjds jtfPjD"
+        class="sc-ftvSup ixhnnA"
       >
         <div
-          class="sc-eCYdqJ iSiowD"
+          class="sc-jSMfEi bOwVaB"
         />
       </div>
     </div>
   </div>
   <div
-    class="sc-jSMfEi cdnhni"
+    class="sc-gKXOVf hzNlBD"
     data-testid="loading-screen"
   >
     <div
-      class="sc-gKXOVf gujzKN"
+      class="sc-iBkjds kvvntL"
     >
       <div
-        class="sc-iBkjds jtfPjD"
+        class="sc-ftvSup ixhnnA"
       >
         <div
-          class="sc-eCYdqJ iSiowD"
+          class="sc-jSMfEi bOwVaB"
         />
       </div>
     </div>
