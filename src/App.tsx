@@ -8,7 +8,7 @@ import { useCurrentArticle } from './hooks/useCurrentArticle';
 import withStatusHandler from './helpers/hoc/withStatusHandler';
 
 import { Article, Footer } from './components';
-import { Home } from './pages';
+import { Dashboard, Home } from './pages';
 
 
 function App(): JSX.Element {
@@ -35,6 +35,11 @@ function App(): JSX.Element {
           <Route index element={<Navigate to="/" replace />} />
           <Route path=":permalink" element={<ArticleWrapper />} />
         </Route>
+        <Route path='dashboard/*'>
+          <Route index element={<Dashboard />} />
+          <Route path='create-article' element={<div>Create an article</div>} />
+        </Route>
+
       </Routes>
       <Footer />
     </main>
