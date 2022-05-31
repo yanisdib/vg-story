@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FeaturedArticlesGrid component should render without crashing 1`] = `
+<div>
+  <section
+    class="sc-idiyUo btwCky"
+  >
+    <div
+      class="sc-dIouRR jNrfop"
+    >
+      <div
+        class="sc-bczRLJ bJuwle"
+      >
+        <div
+          class="sc-hHLeRK dWdeeW"
+        >
+          <div
+            class="sc-dmRaPn jxPXHO"
+          >
+            <div
+              class="sc-kgflAQ QKlkb"
+              data-testid="card-test-0"
+            >
+              <a
+                href="/article/this-is-a-test"
+              >
+                <img
+                  alt="This is a test"
+                  src="hello.jpg"
+                  title="This is a test"
+                />
+              </a>
+              <h5>
+                Test
+              </h5>
+              <a
+                href="/article/this-is-a-test"
+              >
+                <h3>
+                  This is a test
+                </h3>
+              </a>
+              <p />
+            </div>
+            <div
+              class="sc-kgflAQ QKlkb"
+              data-testid="card-test-1"
+            >
+              <a
+                href="/article/this-is-a-second-test"
+              >
+                <img
+                  alt="This is a second test"
+                  src="hello.jpg"
+                  title="This is a second test"
+                />
+              </a>
+              <h5>
+                Test
+              </h5>
+              <a
+                href="/article/this-is-a-second-test"
+              >
+                <h3>
+                  This is a second test
+                </h3>
+              </a>
+              <p />
+            </div>
+            <div
+              class="sc-fLlhyt goHKFl"
+              data-testid="fullcard-test"
+            >
+              <div
+                class="sc-bBrHrO"
+              >
+                <h5>
+                  Test
+                </h5>
+                <a
+                  href="/article/this-is-a-third-test"
+                >
+                  <h3>
+                    This is a third test
+                  </h3>
+                </a>
+                <p />
+              </div>
+              <div
+                class="sc-bBrHrO"
+              >
+                <a
+                  href="/article/this-is-a-third-test"
+                >
+                  <img
+                    alt="This is a third test"
+                    src="hello.jpg"
+                    title="This is a third test"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-ivTmOn gFebUW"
+      >
+        <a
+          href="/browse/articles"
+        >
+          <h3>
+            View all stories -&gt;
+          </h3>
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+`;
