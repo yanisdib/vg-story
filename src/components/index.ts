@@ -10,4 +10,5 @@ export { default as Hero } from './Hero/Hero';
 export { default as FeaturedArticlesGrid } from './FeaturedArticlesGrid/FeaturedArticlesGrid';
 export { default as Article } from './Article/Article';
 
+export { default as ArticleForm } from './ArticleForm/ArticleForm';
 export { default as CreateArticle } from './CreateArticle/CreateArticle';
