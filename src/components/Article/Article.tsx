@@ -46,7 +46,7 @@ function Article({ currentArticle }: ArticleProps): JSX.Element {
                             <h5>
                                 {topics
                                     .map<React.ReactNode>(topic => (
-                                        <Link to={`/browse/${topic.permalink}`}>
+                                        <Link key={topic.id} to={`/browse/${topic.permalink}`}>
                                             {topic.name}
                                         </Link>
                                     ))
