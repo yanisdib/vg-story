@@ -12,7 +12,7 @@ import {
 export interface Article {
     author: string;
     backgroundHex?: string;
-    body?: string;
+    body: string;
     comments?: Comment[];
     createdAt: number;
     editedAt?: number;
