@@ -3,22 +3,22 @@
 exports[`FeaturedArticlesGrid component should render without crashing 1`] = `
 <div>
   <section
-    class="sc-fLlhyt fAPECu"
+    class="sc-ikZpkk jZxvB"
   >
     <div
-      class="sc-bBrHrO glLEvJ"
+      class="sc-jIZahH eEoeKi"
     >
       <div
         class="sc-bczRLJ bJuwle"
       >
         <div
-          class="sc-ivTmOn cegLtl"
+          class="sc-himrzO hZxEzh"
         >
           <div
-            class="sc-cxabCf hqIxDH"
+            class="sc-gXmSlM hjeamy"
           >
             <div
-              class="sc-llJcti kKZWRF"
+              class="sc-cCsOjp YueGP"
               data-testid="card-test-0"
             >
               <a
@@ -43,7 +43,7 @@ exports[`FeaturedArticlesGrid component should render without crashing 1`] = `
               <p />
             </div>
             <div
-              class="sc-llJcti kKZWRF"
+              class="sc-cCsOjp YueGP"
               data-testid="card-test-1"
             >
               <a
@@ -68,11 +68,11 @@ exports[`FeaturedArticlesGrid component should render without crashing 1`] = `
               <p />
             </div>
             <div
-              class="sc-iIPllB eswoWg"
+              class="sc-ciZhAO dYcmPU"
               data-testid="fullcard-test"
             >
               <div
-                class="sc-gicCDI"
+                class="sc-jdAMXn"
               >
                 <h5>
                   Test
@@ -87,7 +87,7 @@ exports[`FeaturedArticlesGrid component should render without crashing 1`] = `
                 <p />
               </div>
               <div
-                class="sc-gicCDI"
+                class="sc-jdAMXn"
               >
                 <a
                   href="/article/this-is-a-third-test"
@@ -104,7 +104,7 @@ exports[`FeaturedArticlesGrid component should render without crashing 1`] = `
         </div>
       </div>
       <div
-        class="sc-ezWOiH jEonqP"
+        class="sc-bZnhIo ixbXnt"
       >
         <a
           href="/browse/articles"

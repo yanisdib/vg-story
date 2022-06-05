@@ -14,6 +14,7 @@ import {
     ViewMore,
     Wrapper
 } from './FeaturedArticlesGrid.styles';
+import { findFirstSentence } from '../../helpers/utils/string';
 
 
 interface FeaturedArticlesGridProps {
@@ -42,6 +43,8 @@ function FeaturedArticlesGrid(
                                         topics
                                     } = article;
 
+                                    const bodyPreview: string = findFirstSentence(body); 
+
                                     return (index < featuredArticles.length - 1) ? (
                                         <Card key={id} data-testid={`card-test-${index}`}>
                                             <Link to={`article/${permalink}`}>
@@ -59,7 +62,7 @@ function FeaturedArticlesGrid(
                                             <Link to={`article/${permalink}`}>
                                                 <h3>{title}</h3>
                                             </Link>
-                                            <p>{body}</p>
+                                            <p>{bodyPreview}</p>
                                         </Card>
                                     ) : (
                                         <FullCard key={id} data-testid="fullcard-test">
@@ -72,7 +75,7 @@ function FeaturedArticlesGrid(
                                                 <Link to={`article/${permalink}`}>
                                                     <h3>{title}</h3>
                                                 </Link>
-                                                <p>{body}</p>
+                                                <p>{bodyPreview}</p>
                                             </Column>
                                             <Column>
                                                 <Link to={`article/${permalink}`}>
