@@ -13,7 +13,7 @@ import {
     fetchArticlesSuccess,
     createArticleRequest,
     createArticleSuccess
-} from '../articles/articlesSlice';
+} from '../slices/articles/articlesSlice';
 
 
 export function* fetchArticlesSaga() {

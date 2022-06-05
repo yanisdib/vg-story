@@ -8,7 +8,7 @@ import { fetchArticleByPermalink } from '../../api/articles';
 import {
     fetchCurrentArticleRequest,
     fetchCurrentArticleSuccess
-} from '../currentArticle/currentArticleSlice';
+} from '../slices/currentArticle/currentArticleSlice';
 
 
 export function* fetchCurrentArticleSaga({ payload: permalink }: PayloadAction<string>) {
