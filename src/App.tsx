@@ -7,7 +7,7 @@ import {
 import { useCurrentArticle } from './hooks/useCurrentArticle';
 import withStatusHandler from './helpers/hoc/withStatusHandler';
 
-import { Article, Footer } from './components';
+import { Article, CreateArticle, Footer } from './components';
 import { Dashboard, Home } from './pages';
 
 
@@ -37,9 +37,8 @@ function App(): JSX.Element {
         </Route>
         <Route path='dashboard/*'>
           <Route index element={<Dashboard />} />
-          <Route path='create-article' element={<div>Create an article</div>} />
+          <Route path='create-article' element={<CreateArticle />} />
         </Route>
-
       </Routes>
       <Footer />
     </main>
