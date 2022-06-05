@@ -2,7 +2,7 @@ import { Article } from '../../interfaces';
 
 import { useArticles } from '../../hooks/useArticles';
 
-import { selectFeaturedArticles } from '../../services/redux/selectors/articles';
+import { selectFeaturedArticles, selectLatestFeaturedArticles } from '../../services/redux/selectors/articles';
 
 import withStatusHandler from '../../helpers/hoc/withStatusHandler';
 
@@ -12,7 +12,7 @@ import { FeaturedArticlesGrid, Hero } from '../../components';
 function Home(): JSX.Element {
     const { articles, error, status } = useArticles();
 
-    const featuredArticles = selectFeaturedArticles({
+    const featuredArticles = selectLatestFeaturedArticles({
         body: articles,
         error,
         status
