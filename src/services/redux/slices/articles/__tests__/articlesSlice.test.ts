@@ -5,7 +5,7 @@ import reducer, {
     fetchArticlesSuccess
 } from '../articlesSlice';
 
-import { Article, StoreState } from '../../../../interfaces';
+import { Article, StoreState } from '../../../../../interfaces';
 
 
 const articles: Article[] = [

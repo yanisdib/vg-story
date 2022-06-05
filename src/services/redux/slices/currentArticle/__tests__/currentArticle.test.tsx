@@ -3,7 +3,7 @@ import reducer, {
     fetchCurrentArticleSuccess
 } from '../currentArticleSlice';
 
-import { Article, StoreState } from '../../../../interfaces';
+import { Article, StoreState } from '../../../../../interfaces';
 
 
 const article: Article = {
@@ -89,7 +89,10 @@ describe('currentArticleSlice actions', () => {
     it('should trigger request to API', () => {
         const action = fetchCurrentArticleRequest(article.permalink);
 
-        expect(action).toEqual({ type: 'currentArticle/fetchCurrentArticleRequest' });
+        expect(action).toEqual({
+            type: 'currentArticle/fetchCurrentArticleRequest',
+            payload: 'this-is-a-test'
+        });
     });
 
     it('should generate article object', () => {

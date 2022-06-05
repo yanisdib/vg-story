@@ -9,7 +9,7 @@ import {
     Article,
     FailedAction,
     StoreState
-} from '../../../interfaces';
+} from '../../../../interfaces';
 
 
 interface ArticleState extends StoreState<Article[]> { }
