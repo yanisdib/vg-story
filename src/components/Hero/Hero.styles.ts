@@ -77,7 +77,7 @@ export const Preview = styled.div`
 export const FrontImage = styled.div`
     display: flex;
     flex-direction: column;
-    flex-basis: 50%;
+    /* flex-basis: 50%; */
     justify-content: center;
     align-items: center;
     height: inherit;
