@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
 
 import { useAppSelector } from '../services/redux/hooks';
-import { fetchCurrentArticleRequest } from '../services/redux/currentArticle/currentArticleSlice';
+import { fetchCurrentArticleRequest } from '../services/redux/slices/currentArticle/currentArticleSlice';
 
 
 export function useCurrentArticle() {

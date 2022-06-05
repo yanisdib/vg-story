@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 
-import { fetchArticlesRequest } from '../services/redux/articles/articlesSlice';
+import { fetchArticlesRequest } from '../services/redux/slices/articles/articlesSlice';
 import { useAppSelector } from '../services/redux/hooks';
 import { selectArticles } from '../services/redux/selectors/articles';
 
