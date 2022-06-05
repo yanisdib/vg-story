@@ -1,5 +1,11 @@
 import { ImageAttributes } from '../../interfaces';
-import { AddImageIcon, FileInput, PreviewCanvas, Uploader } from './ImageUploader.styles';
+
+import {
+    AddImageIcon,
+    FileInput,
+    PreviewCanvas,
+    Uploader
+} from './ImageUploader.styles';
 
 
 interface ImageUploaderProps {
@@ -25,7 +31,7 @@ function ImageUploader({ image, onChange }: ImageUploaderProps)
                 <AddImageIcon />
                 Choose an image for your story
                 <small>
-                    You can only upload images of.jpg, .jpeg and.png format
+                    You can only upload images of .jpg, .jpeg and.png formats
                 </small>
                 <FileInput
                     type="file"

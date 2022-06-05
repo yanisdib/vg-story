@@ -29,7 +29,7 @@ exports[`ImageUploader component should render without crashing 1`] = `
     </svg>
     Choose an image for your story
     <small>
-      You can only upload images of.jpg, .jpeg and.png format
+      You can only upload images of .jpg, .jpeg and.png formats
     </small>
     <input
       accept=".jpg, .jpeg, .png"
