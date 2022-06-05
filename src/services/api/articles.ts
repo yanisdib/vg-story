@@ -35,3 +35,13 @@ export const fetchArticleByPermalink = async (
         throw error;
     }
 }
+
+export const addArticleToApi = async (
+    article: Article
+): Promise<void> => {
+
+    const url: string = `${ROOT_API_URL}/articles`;
+
+    const results = await axios.post(url, article);
+    console.log(results.data);
+}
